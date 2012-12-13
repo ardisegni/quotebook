@@ -4,7 +4,7 @@ class LoadData < ActiveRecord::Migration
     # Create initial users.
     down
     jb = User.create(:first_name => "Che ne sarà di noi")
-    ph = User.create(:first_name => "Paris",  :last_name => "Hilton")
+    ph = User.create(:first_name => "Michael",  :last_name => "Hilton")
     bh = User.create(:first_name => "Barack", :last_name => "Obama")
     jo = User.create(:first_name => "John", :last_name => "Ousterhout")
     funny = User.create(:first_name => "<Funny>", :last_name => "&lt;name")
@@ -29,7 +29,7 @@ class LoadData < ActiveRecord::Migration
    
     # Create initial comments.
     comment = Comment.create(:date_time => "2009-09-02 14:01:00",
-        :comment => "Learning new programming languages is hard...",
+        :comment => "Hi",
 		:user => jo, :photo => photo1)
     
     comment = Comment.create(:date_time => "2009-09-02 14:02:00",
