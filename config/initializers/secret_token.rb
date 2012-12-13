@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Quotebook::Application.config.secret_token = '1b5afc2918d2b3b1ce933ddcebe2c0d6722822b35693a262c332afeed696d8b635d867a8599262e72c5224c8fb3c463150f903357438a744ac4b015303c1bc42'
+Set5::Application.config.secret_token = 'a9ac3171f34d5cade2a3321fb3e18251fe59308b9880f23ba45ad65f7bba8ecf6eb25ab57ae82d8c8af543b1db3377b47c60868ee4f3ce5e953010f6cbcf6399'

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Photo:</b>
+  <%= @comment.photo_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @comment.user_id %>
+  
+  <% userlink = @creator.first_name + " " + @creator.last_name %>
+  <%= link_to( userlink, @creator) %>
+  
+  
+</p>
+
+<p>
+  <b>Date time:</b>
+  <%= @comment.date_time %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= @comment.comment %>
+</p>
+
+
+<%= link_to 'Edit', edit_comment_path(@comment) %> |
+<%= link_to 'Back', comments_path %>

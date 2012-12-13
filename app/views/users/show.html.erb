@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+
+
+
+<p>
+<%= @user.first_name %> 
+<%= @user.last_name %>
+</p>
+
+<% @userphotos.each do |photo| %>
+<div>
+<%= image_tag(photo.file_name) %>
+<p>
+<%= photo.date_time  %>
+</p>
+</div>
+ <% end %>
+
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

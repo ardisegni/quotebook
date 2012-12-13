@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Quotebook::Application.load_tasks
+Set5::Application.load_tasks

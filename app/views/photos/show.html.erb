@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @photo.user_id %>
+</p>
+
+<p>
+  <b>Date time:</b>
+  <%= @photo.date_time %>
+</p>
+
+<p>
+  <b>File name:</b>
+  <%= @photo.file_name %>
+</p>
+
+<p>
+<%= image_tag(@photo.file_name) %> 
+ </p>
+ 
+ <ul>
+ <% @photocomments.each do |comment| %>
+ <li>
+ <%= comment.comment %>
+ </li>
+ <%end%>
+ </ul>
+ 
+ 
+
+<%= link_to 'Edit', edit_photo_path(@photo) %> |
+<%= link_to 'Back', photos_path %>
