@@ -1,38 +1,38 @@
 <p id="notice"><%= notice %></p>
 
-
-
 <h2>
 <%= @user.first_name %> 
 <%= @user.last_name %>
 </h2>
 
-<div class="userphotos">
 <% @userphotos.each do |photo| %>
+<div>
 <%= image_tag(photo.file_name) %>
 <p>
 <%= photo.date_time  %>
 </p>
 
 <% pcomments = photo.comments %>
-<ul class="photo">
+<ul>
  <% pcomments.each do |comment| %>
  <li>
+ <%= comment.comment %>
+ <br/>
  <% commentor = comment.user %>
-  <% userlink = commentor.first_name + " " + commentor.last_name %>
-  <%= link_to( userlink, commentor) %>  
-  
-  <%= comment.comment %>    
-  
-  <%= comment.date_time %>
+ <% userlink = commentor.first_name + " " + commentor.last_name %>
+ <%= link_to( userlink, commentor) %>
+ on
+ <%= comment.date_time %>
+ 
  </li>
  <%end%>
  </ul>
- <hr/> 
- <% end %> 
+ <hr>
  
-  </div>
- 
+</div>
+ <% end %>
+
+
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

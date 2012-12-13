@@ -3,8 +3,8 @@ class LoadData < ActiveRecord::Migration
   def self.up
     # Create initial users.
     down
-    jb = User.create(:first_name => "Che ne sarà di noi")
-    ph = User.create(:first_name => "Michael",  :last_name => "Hilton")
+    jb = User.create(:first_name => "Justin", :last_name => "Bieber")
+    ph = User.create(:first_name => "Paris",  :last_name => "Hilton")
     bh = User.create(:first_name => "Barack", :last_name => "Obama")
     jo = User.create(:first_name => "John", :last_name => "Ousterhout")
     funny = User.create(:first_name => "<Funny>", :last_name => "&lt;name")
@@ -13,7 +13,7 @@ class LoadData < ActiveRecord::Migration
     photo1 = Photo.create(:date_time => "2009-08-30 10:44:23",
         :file_name => "ouster.jpg", :user => jo)
 	photo2 = Photo.create(:date_time => "2010-09-13 20:00:00",
-        :file_name => "bieber1.jpg", :user => jb)
+        :file_name => "imgres.jpg", :user => jb)
     photo3 = Photo.create(:date_time => "2010-09-13 20:05:03",
         :file_name => "bieber2.jpg", :user => jb)
     photo4 = Photo.create(:date_time => "2009-11-18 18:02:00",
@@ -29,7 +29,7 @@ class LoadData < ActiveRecord::Migration
    
     # Create initial comments.
     comment = Comment.create(:date_time => "2009-09-02 14:01:00",
-        :comment => "Hi",
+        :comment => "Learning new programming languages is hard...",
 		:user => jo, :photo => photo1)
     
     comment = Comment.create(:date_time => "2009-09-02 14:02:00",
