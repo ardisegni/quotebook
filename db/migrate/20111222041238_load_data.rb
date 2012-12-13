@@ -3,7 +3,7 @@ class LoadData < ActiveRecord::Migration
   def self.up
     # Create initial users.
     down
-    jb = User.create(:first_name => "Justin", :last_name => "Bieber")
+    jb = User.create(:first_name => "Che ne sarà di noi")
     ph = User.create(:first_name => "Paris",  :last_name => "Hilton")
     bh = User.create(:first_name => "Barack", :last_name => "Obama")
     jo = User.create(:first_name => "John", :last_name => "Ousterhout")
