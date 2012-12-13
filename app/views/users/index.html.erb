@@ -1,26 +1,10 @@
-<h1>Listing users</h1>
 
+
+<h2>User List</h2>
 <table>
-<<<<<<< HEAD
-  <tr>
-    <th>First name</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @users.each do |user| %>
-  <tr>
-    <td><%= link_to user.first_name, "bieber.jpg" %></td>
-    <td><%= link_to 'Show', user %></td>
-    <td><%= link_to 'Edit', edit_user_path(user) %></td>
-    <td><%= link_to 'Destroy', user, confirm: 'Are you sure?', method: :delete %></td>
-=======
-
 <% @users.each do |user| %>
   <tr>
 	 <td><%= link_to(user.first_name + " " + user.last_name , user )%></td>
->>>>>>> 29fad44eac52a16c1961be8ad9bdcde1ef7d5cee
   </tr>
 <% end %>
 </table>
