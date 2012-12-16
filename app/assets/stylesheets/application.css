@@ -4,13 +4,13 @@ margin-bottom: 30px;
 }
 
 .header  h2{
-font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-color: #003300;
+font-family: "Klavika Bold", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+background: #3b5998;
 }
 
 .header {
-   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-	color: #001A33;
+   font-family: "Klavika Bold", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	background: #3b5998;
 }
 
 div.header{
