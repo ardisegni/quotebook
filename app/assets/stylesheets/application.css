@@ -6,11 +6,16 @@ margin-bottom: 30px;
 .header  h2{
 font-family: "Klavika Bold", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 background: #3b5998;
+color: #ffffff;
+    position:relative;
+    text-indent:34px;
+    letter-spacing:10px;
+    font-weight:bold;
+    line-height:66px;
 }
 
 .header {
    font-family: "Klavika Bold", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-	background: #3b5998;
 }
 
 div.header{
