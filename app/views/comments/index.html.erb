@@ -1,11 +1,11 @@
-<h1>Listing comments</h1>
+<h1>Citazioni</h1>
 
 <table>
   <tr>
-    <th>Photo</th>
-    <th>User</th>
+    <th>Film</th>
+    <th>Foto</th>
     <th>Date time</th>
-    <th>Comment</th>
+    <th>Citazione</th>
     <th></th>
     <th></th>
     <th></th>
@@ -17,13 +17,13 @@
     <td><%= comment.user_id %></td>
     <td><%= comment.date_time %></td>
     <td><%= comment.comment %></td>
-    <td><%= link_to 'Show', comment %></td>
-    <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
-    <td><%= link_to 'Destroy', comment, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to 'Mostra', comment %></td>
+    <td><%= link_to 'Modifica', edit_comment_path(comment) %></td>
+    <td><%= link_to 'Elimina', comment, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Comment', new_comment_path %>
+<%= link_to 'Nuova citazione', new_comment_path %>
