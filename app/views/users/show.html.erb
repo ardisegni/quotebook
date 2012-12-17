@@ -11,15 +11,13 @@
 <p>
 <%= photo.date_time  %>
 </p>
-
-
- <%end%>
- 
  <hr>
+</div>
+ <% end %>
  
- <% ucomments = @user.comments %>
+ <% pcomments = @user.comments %>
  <ul>
-  <% ucomments.each do |comment| %>
+  <% pcomments.each do |comment| %>
   <li>
   <%= comment.comment %>
   <br/>
@@ -31,12 +29,7 @@
 
   </li>
   <%end%>
-  </ul>
-  <hr>
-
- 
-</div>
- <% end %>
+  </ul> 
 
 
 <%= link_to 'Nuova citazione', new_comment_path %>
