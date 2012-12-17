@@ -1,17 +1,17 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>User:</b>
+  <b>Film:</b>
   <%= @photo.user_id %>
 </p>
 
 <p>
-  <b>Date time:</b>
+  <b>Data e ora:</b>
   <%= @photo.date_time %>
 </p>
 
 <p>
-  <b>File name:</b>
+  <b>Nome del file:</b>
   <%= @photo.file_name %>
 </p>
 
@@ -29,5 +29,5 @@
  
  
 
-<%= link_to 'Edit', edit_photo_path(@photo) %> |
-<%= link_to 'Back', photos_path %>
+<%= link_to 'Modifica', edit_photo_path(@photo) %> |
+<%= link_to 'Indietro', photos_path %>
