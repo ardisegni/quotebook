@@ -31,7 +31,7 @@
  </ul>
  <hr>
  
- <% if @photoid = 0%>
+ <% else%>
  <% ucomments = @user.comments %>
  <ul>
   <% ucomments.each do |comment| %>
@@ -45,7 +45,6 @@
   <%= comment.date_time %>
 
   </li>
-  <%end%>
   <%end%>
   </ul>
   <hr>
