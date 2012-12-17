@@ -5,6 +5,7 @@
 <%= @user.last_name %>
 </h2>
 
+<%if @photoid != 0%>
 <% @userphotos.each do |photo| %>
 <div>
 <%= image_tag(photo.file_name) %>
@@ -26,8 +27,29 @@
  
  </li>
  <%end%>
+ <%end%>
  </ul>
  <hr>
+ 
+ <% if @photoid = 0%>
+ <% ucomments = @user.comments %>
+ <ul>
+  <% ucomments.each do |comment| %>
+  <li>
+  <%= comment.comment %>
+  <br/>
+  <% commentor = comment.user %>
+  <% userlink = commentor.first_name + " " + commentor.last_name %>
+  <%= link_to( userlink, commentor) %>
+  on
+  <%= comment.date_time %>
+
+  </li>
+  <%end%>
+  <%end%>
+  </ul>
+  <hr>
+
  
 </div>
  <% end %>
