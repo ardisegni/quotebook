@@ -2,7 +2,6 @@
 
 <h2>
 <%= @user.first_name %> 
-<%= @user.last_name %>
 </h2>
 
 <% @userphotos.each do |photo| %>
@@ -22,7 +21,7 @@
   <%= comment.comment %>
   <br/>
   <% commentor = comment.user %>
-  <% userlink = commentor.first_name + " " + commentor.last_name %>
+  <% userlink = commentor.first_name %>
   <%= link_to( userlink, commentor) %>
   on
   <%= comment.date_time %>
