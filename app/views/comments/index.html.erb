@@ -12,7 +12,7 @@
 
 <% @comments.each do |comment| %>
   <tr>
-    <td><%= comment.user_id %></td>
+      <td><%= (User.find(comment.user_id)).first_name %></td>
     <td><%= comment.date_time %></td>
     <td><%= comment.comment %></td>
     <td><%= link_to 'Mostra', comment %></td>
