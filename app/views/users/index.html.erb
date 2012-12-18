@@ -4,7 +4,9 @@
 
 <% @users.each do |user| %>
   <tr>
-	 <td><%= link_to(user.first_name, user)%></td>
+      <td><%= link_to(user.first_name, user)%></td>
+      <td><%= link_to 'Modifica', edit_user_path(user) %></td>
+      <td><%= link_to 'Elimina', user, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
