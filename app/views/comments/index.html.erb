@@ -12,8 +12,8 @@
 
 <% @comments.each do |comment| %>
   <tr>
-    <td><%= comment.user_id %></td>
-    <td><%= comment.date_time %></td>
+      <% userlink = @creator.first_name%>
+       <%= link_to( userlink, @creator) %>    <td><%= comment.date_time %></td>
     <td><%= comment.comment %></td>
     <td><%= link_to 'Mostra', comment %></td>
     <td><%= link_to 'Modifica', edit_comment_path(comment) %></td>
