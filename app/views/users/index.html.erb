@@ -6,16 +6,30 @@
   <tr>
       <td><%= link_to(user.first_name, user)%></td>
       <td><%= link_to 'Modifica', edit_user_path(user) %></td>
-      <td><%= link_to 'Elimina', user, confirm: 'Are you sure?', method: :delete %></td>
+      <td><%= link_to 'Elimina', user, confirm: 'Sei sicuro?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
 
-<h1>Perle</h1>
+<h1>Perle di vita</h1>
+
+<table>
+
+<% Perla.all.each do |perla| %>
+  <tr>
+      <td><%= link_to(perla.first_name, perla)%></td>
+      <td><%= link_to 'Modifica', edit_perla_path(perla) %></td>
+        <td><%= link_to 'Elimina', perla, confirm: 'Sei sicuro?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
 
 
 <hr>
 <%= link_to 'Nuovo film', new_user_path %>
+<br>
+<%= link_to 'Nuovo autore di perle', new_perla_path %>
+
 <br>
 <br>
 

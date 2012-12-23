@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @citazione.id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @citazione.user %>
+</p>
+
+<p>
+  <b>Date time:</b>
+  <%= @citazione.date_time %>
+</p>
+
+<p>
+  <b>Citazione:</b>
+  <%= @citazione.citazione %>
+</p>
+
+
+<%= link_to 'Edit', edit_citazione_path(@citazione) %> |
+<%= link_to 'Back', citaziones_path %>

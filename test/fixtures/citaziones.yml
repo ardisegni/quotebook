@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: 1
+  user: MyString
+  date_time: 2012-12-23 10:59:28
+  citazione: MyText
+
+two:
+  id: 1
+  user: MyString
+  date_time: 2012-12-23 10:59:28
+  citazione: MyText

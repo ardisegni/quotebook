@@ -1,0 +1,25 @@
+<h1>Perle di vita</h1>
+
+<table>
+  <tr>
+    <th>Autore</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @perlas.each do |perla| %>
+  <tr>
+    <td><%= perla.first_name %></td>
+    <td><%= perla.last_name %></td>
+    <td><%= link_to 'Mostra', perla %></td>
+    <td><%= link_to 'Modifica', edit_perla_path(perla) %></td>
+    <td><%= link_to 'Elimina', perla, method: :delete, data: { confirm: 'Sei sicuro?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nuova perla', new_comment_path %>
+

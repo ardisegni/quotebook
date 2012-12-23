@@ -1,0 +1,33 @@
+<%= form_for(@citazione) do |f| %>
+  <% if @citazione.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@citazione.errors.count, "error") %> prohibited this citazione from being saved:</h2>
+
+      <ul>
+      <% @citazione.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br />
+    <%= f.number_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :user %><br />
+    <%= f.text_field :user %>
+  </div>
+  <div class="field">
+    <%= f.label :date_time %><br />
+    <%= f.datetime_select :date_time %>
+  </div>
+  <div class="field">
+    <%= f.label :citazione %><br />
+    <%= f.text_area :citazione %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

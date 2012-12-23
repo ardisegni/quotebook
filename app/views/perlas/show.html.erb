@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>First name:</b>
+  <%= @perla.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @perla.last_name %>
+</p>
+
+
+<%= link_to 'Modifica', edit_perla_path(@perla) %> |
+<%= link_to 'Indietro', perlas_path %>
