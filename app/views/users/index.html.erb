@@ -13,16 +13,6 @@
 
 <h1>Perle di vita</h1>
 
-<table>
-
-<% Perla.all.each do |perla| %>
-  <tr>
-      <td><%= link_to(perla.first_name, perla)%></td>
-      <td><%= link_to 'Modifica', edit_perla_path(perla) %></td>
-        <td><%= link_to 'Elimina', perla, confirm: 'Sei sicuro?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
 
 
 <hr>
