@@ -1,25 +1,24 @@
 <h1>Perle di vita</h1>
 
 <table>
-  <tr>
-    <th>Autore</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
 
 <% @perlas.each do |perla| %>
   <tr>
-    <td><%= perla.first_name %></td>
-    <td><%= perla.last_name %></td>
-    <td><%= link_to 'Mostra', perla %></td>
-    <td><%= link_to 'Modifica', edit_perla_path(perla) %></td>
-    <td><%= link_to 'Elimina', perla, method: :delete, data: { confirm: 'Sei sicuro?' } %></td>
+      <td><%= link_to(perla.first_name, perla)%></td>
+      <td><%= link_to 'Modifica', edit_perla_path(perla) %></td>
+      <td><%= link_to 'Elimina', perla, confirm: 'Sei sicuro?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
 
-<br />
+<hr>
+<%= link_to 'Nuovo autore di perle', new_perla_path %>
 
-<%= link_to 'Nuova perla', new_comment_path %>
+<br>
+<br>
+
+<%= link_to('Tutte le citazioni', comments_path)%>
+
+
+
 
