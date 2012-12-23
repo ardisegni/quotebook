@@ -12,7 +12,7 @@
 
 <% @comments.each do |comment| %>
   <tr>
-    <td><%= comment.user.first_name%></td>
+    <td><%= comment.user_id%></td>
     <td><%= comment.date_time.to_formatted_s(:long) %></td>
     <td><%= comment.comment %></td>
     <td><%= link_to 'Mostra', comment %></td>
