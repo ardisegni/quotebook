@@ -12,12 +12,13 @@
 
 <% @comments.each do |comment| %>
   <tr>
-    <td><%= comment.user_id%></td>
-    <td><%= comment.date_time %></td>
+    <td><%= comment.user.first_name%></td>
+    <td><%= comment.date_time.to_formatted_s(:long) %></td>
     <td><%= comment.comment %></td>
     <td><%= link_to 'Mostra', comment %></td>
     <td><%= link_to 'Modifica', edit_comment_path(comment) %></td>
     <td><%= link_to 'Elimina', comment, confirm: 'Are you sure?', method: :delete %></td>
+    <% @comments.sort_by! {comment.date_time}%>
   </tr>
 <% end %>
 </table>
