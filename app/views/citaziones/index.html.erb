@@ -1,11 +1,10 @@
-<h1>Listing citaziones</h1>
+<h1>Perle</h1>
 
 <table>
   <tr>
-    <th>Id</th>
-    <th>User</th>
-    <th>Date time</th>
-    <th>Citazione</th>
+    <th>Autore</th>
+    <th>Data e ora</th>
+    <th>Perla</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,17 +12,16 @@
 
 <% @citaziones.each do |citazione| %>
   <tr>
-    <td><%= citazione.id %></td>
     <td><%= citazione.user %></td>
     <td><%= citazione.date_time %></td>
     <td><%= citazione.citazione %></td>
-    <td><%= link_to 'Show', citazione %></td>
-    <td><%= link_to 'Edit', edit_citazione_path(citazione) %></td>
-    <td><%= link_to 'Destroy', citazione, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Mostra', citazione %></td>
+    <td><%= link_to 'Modifica', edit_citazione_path(citazione) %></td>
+    <td><%= link_to 'Elimina', citazione, method: :delete, data: { confirm: 'Sei sicuro?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Citazione', new_citazione_path %>
+<%= link_to 'Nuova perla', new_citazione_path %>
